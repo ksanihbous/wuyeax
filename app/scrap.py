@@ -18,7 +18,7 @@ def img(query):
             imagedata.append(clu['src'])
     result = {
         'status':'200',
-        'creator':'Asa Xyz',
+        'creator':'Axa Xyz',
         'result':imagedata
         }
     return(result)
@@ -48,7 +48,7 @@ def bmkg():
     dirasakan = random.choice(diras)
     result = {
         "status":"200",
-        "creator":"Asa Xyz",
+        "creator":"Axa Xyz",
         "result": {
             "lokasi": lokasi,
             "waktu": waktu,
@@ -80,7 +80,7 @@ def artinama(nama):
     ret = "%s"%(st)
     result = {
         "status":"200",
-        "creator":"Asa Xyz",
+        "creator":"Axa Xyz",
         "result": {
             "arti_nama": ret
         }
@@ -101,7 +101,7 @@ def cctv(code):
     desc = soup2.find_all('p')[1].get_text()
     result = {
         "status":"200",
-        "creator":"Asa Xyz",
+        "creator":"Axa Xyz",
         "result": {
             "title": title,
             "description": desc,
@@ -130,7 +130,7 @@ def sifatnama(name):
     setia = random.choice(stia)
     result = {
         "status":"200",
-        "creator":"Asa Xyz",
+        "creator":"Axa Xyz",
         "result": {
             "romantis": romantis,
             "ngangenin": ngangenin,
@@ -152,7 +152,7 @@ def quotes():
     result = {
         "status":"200",
         "creator":"Asa Xyz",
-        "result": quotes
+        "quotes": quotes
     }
     return(result)
 
@@ -171,7 +171,7 @@ def instaprofile(user):
     biography_link = data["result"]["external_url"]
     result = {
         "status":"200",
-        "creator":"Asa Xyz",
+        "creator":"Axa Xyz",
         "result": {
             "username": username,
             "fullname": name,
@@ -182,6 +182,36 @@ def instaprofile(user):
             "following": following,
             "media": media,
             "private": private
+        }
+    }
+    return(result)
+
+def twitterprofile(user):
+    r = requests.get("http://apitrojans.herokuapp.com/twitter?user={}".format(str(user)))
+    data=r.text
+    data=json.loads(data)
+    username = data["result"]["id"]
+    name = data["result"]["nama"]
+    picture = data["result"]["picture"]
+    biography = data["result"]["bio"]
+    followers = data["result"]["followers"]
+    following = data["result"]["following"]
+    tweet = data["result"]["tweet"]
+    like = data["result"]["like"]
+    url = data["result"]["url"]
+    result = {
+        "status":"200",
+        "creator":"Axa Xyz",
+        "result": {
+            "username": username,
+            "fullname": name,
+            "profile_img": picture,
+            "bio": biography,
+            "url":url,
+            "followers": followers,
+            "following": following,
+            "tweet": tweet,
+            "like": like
         }
     }
     return(result)
