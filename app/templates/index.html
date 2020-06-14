@@ -1,0 +1,454 @@
+<html lang="en"><head>
+    <title>API Axa Xyz</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta content="Axaa Xyz APIs Documentation." name="description">
+    <!-- <link rel="shortcut icon" type="image/png" href="/favicon.png">  -->
+    <link rel="icon" type="image/png" sizes="180x180" href="favicon.ico">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600&amp;display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" rel="stylesheet" integrity="sha384-KA6wR/X5RY4zFAHpv/CnoG2UW1uogYfdnP67Uv7eULvTveboZJg0qUpmJZb5VqzN" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/ab3c5639ce.js" crossorigin="anonymous"></script><link rel="stylesheet" href="https://kit-free.fontawesome.com/releases/latest/css/free.min.css" media="all"><link rel="stylesheet" href="https://kit-free.fontawesome.com/releases/latest/css/free-v4-font-face.min.css" media="all"><link rel="stylesheet" href="https://kit-free.fontawesome.com/releases/latest/css/free-v4-shims.min.css" media="all">
+    </head><body><audio src="http://www.jplayer.org/audio/mp3/Miaow-snip-Stirring-of-a-fool.mp3" autoplay="autoplay" hidden="hidden"></audio>
+    <!-- <script src="https://cdn.rawgit.com/bungfrangki/efeksalju/2a7805c7/efek-salju.js" type="text/javascript"></script> -->
+    
+<style type="text/css">
+body {
+  background-color: #3a4a58;
+  color: #2e2e2e;
+  font-family: "Open Sans", Arial, Helvetica, sans-serif;
+  font-size: 17px;
+  font-weight: 400;
+  padding: 15px;
+  margin: 0;
+}
+
+.tm-container {
+  max-width: 660px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.tm-main-content {
+  background-color: #ffffff; 
+  margin: -10px;
+}
+
+.tm-text-white { color: white; }
+
+.tm-page-header-container { text-align: center; }
+
+.tm-page-header {
+  display: inline-block;
+  vertical-align: baseline;
+  margin-top: 20px;
+  margin-bottom: 35px;
+  font-size: 2.1rem;
+  font-weight: 400;
+}
+
+.tm-page-icon {
+  display: inline-block;
+  vertical-align: baseline;
+  padding: 10px;
+}
+
+.tm-section-header {
+  color: #996633;
+  text-align: center;
+  font-weight: 400;
+  font-size: 1.5rem;
+  margin-top: 0px;
+  margin-bottom: 15px;
+}
+
+table {
+  width: 100%;
+  border-spacing: 0;
+}
+
+td {
+  text-align: left;
+  padding: 8px 15px;
+}
+
+.tm-text-left {
+  text-align: left;
+}
+
+th {
+  color: #000000;
+  text-align: left;
+  font-weight: 400;
+  font-size: 1rem;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+tr:nth-child(odd) { background-color: #e5e8ed; }
+
+tr.tm-tr-header {
+  background-color: #B5C7D6;
+  height: 40px;
+}
+
+.tm-section {
+  padding-top: 15px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 30px;
+}
+
+.tm-section-small {
+  max-width: 490px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 0;
+}
+
+p {
+  font-size: 1rem;
+  line-height: 1.7;
+  text-align: center;
+}
+
+p.pm{
+  font-size: 1rem;
+  text-align: left;
+  padding-left: 15px;
+  background-color: #c5ced8;
+}
+.marquee{
+    color: #ff0000;
+    max-width: 545px;
+    height: 19.5px;
+    
+}
+
+.tm-mb-0 {
+  margin-bottom: 0;
+  text-align: center;
+}
+
+hr {
+  width: 60%;
+  border: 0.5px solid #ccc;
+}
+
+.tm-social-icons {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.tm-social-icons i { font-size: 1.2rem; }
+.tm-social-link-container { display: inline-block; }
+
+.tm-social-link {
+  color: white;
+  background-color: #c5ced8;
+  border-radius: 2px;
+  width: 35px;
+  height: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 3px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.tm-social-link:hover { background-color: #808e9e; }
+
+.tm-contact-link {
+  color: #333333;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+a { transition: all 0.3s ease; }
+.tm-contact-link:hover { color: #808e9e; }
+
+.tm-footer-text {
+  font-size: 0.9rem;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.tm-footer-link {
+  color: #fff;
+  text-decoration: none;
+}
+
+.tm-footer-link:hover { color: #c5ced8; }
+
+@media (max-width: 430px) {
+  .tm-responsive-table { overflow-x: auto; }
+  table { width: auto; }
+}
+
+<!--
+TEMPLATE API Axa Xyz
+11 DES 2019 v.1 -->
+</style>
+  
+  
+    <div class="tm-container">
+      <div class="tm-text-white tm-page-header-container">
+        <h1 class="tm-page-header">API Axa Xyz</h1>
+        <i class="fab fa-battle-net fa-2x tm-page-icon" aria-hidden="true"></i>
+      </div>
+      <div class="tm-main-content">
+        <!-- Menu -->
+        <section class="tm-section">
+          <h2 class="tm-section-header">List of available API</h2>
+          <p class="pm"><b>UPDATE :</b>
+              <marquee class="marquee" scrolldelay="80">NEW TIKTOK DOWNLOAD (13/06/30)  |  NEW TWITTER TRENDS (10/06/20)  |  NEW TWITTER TWEETS (10/0620)  |  NEW URL SHORTENER (09/06/20)  |  CHANGE ENDPOINT INSTAGRAM VIDEO&amp;IMAGE TO INSTAGRAM POST "/instagram/post?url=url" (09/06/20)  |  FIXED YOUTUBE SEARCH (09/06/20)  |  FIXED INSTAGRAM USER (08/0620)  |  FIXED TWITTER (08/0620)</marquee>
+          </p>
+          <div class="tm-responsive-table">
+            <table border="0">
+              <tbody><tr class="tm-tr-header">
+                <th>LIST API</th>
+                <th>END POINT</th>
+                <th>PARAMS</th>
+                <th>RETURN</th>
+              </tr>
+              <tr>
+                <td class="tm-text-left">1cak</td>
+                <td>/1cak</td>
+                <td>-</td>
+                <td><a href="1cak"><button type="button">Example</button></a></td>
+              </tr>
+              <tr>
+                <td class="tm-text-left">Joox</td>
+                <td>/joox</td>
+                <td>query</td>
+                <td><a href="joox?query=virgoun"><button type="button">Example</button></a></td>
+              </tr>
+              <tr>
+                <td class="tm-text-left">Hobi</td>
+                <td>/hobi?</td>
+                <td>nama</td>
+                <td><a href="hobi?nama=Natasya+Williani"><button type="button">Example</button></a></td>
+              </tr>
+              <tr>
+                <td class="tm-text-left">Bmkg</td>
+                <td>/bmkg</td>
+                <td>-</td>
+                <td><a href="infobmkg"><button type="button">Example</button></a></td>
+              </tr>
+              <tr>
+                <td class="tm-text-left">Image</td>
+                <td>/image?</td>
+                <td>query</td>
+                <td><a href="image?query=naruto"><button type="button">Example</button></a></td>
+              </tr>
+              <tr>
+                <td class="tm-text-left">Zodiak</td>
+                <td>/zodiak?</td>
+                <td>zodiak</td>
+                <td><a href="zodiak?zodiak=libra"><button type="button">Example</button></a></td>
+              </tr>
+              <tr>
+                <td class="tm-text-left">Twitter</td>
+                <td>/twitter?</td>
+                <td>user</td>
+                <td><a href="twitter?username=axaxyz_01"><button type="button">Example</button></a></td>
+              </tr>
+              <tr>
+                <td class="tm-text-left">Twitter Trends</td>
+                <td>/twitter/trends</td>
+                <td>-</td>
+                <td><a href="twitter/trends"><button type="button">Example</button></a></td>
+              </tr>
+              <tr>
+                <td class="tm-text-left">Twitter Tweets</td>
+                <td>/twitter/tweets?</td>
+                <td>user</td>
+                <td><a href="twitter/tweets?user=theabernicee"><button type="button">Example</button></a></td>
+              </tr>
+              <tr>
+                <td class="tm-text-left">Quotes</td>
+                <td>/quotes</td>
+                <td>-</td>
+                <td><a href="quotes"><button type="button">Example</button></a></td>
+              </tr>
+              <tr>
+                <td class="tm-text-left">CCTV</td>
+                <td>/cctv?</td>
+                <td>lihat</td>
+                <td><a href="cctv?lihat=191"><button type="button">Example</button></a></td>
+              </tr>
+              <tr>
+                <td class="tm-text-left">List Cctv</td>
+                <td>/listcctv</td>
+                <td>-</td>
+                <td><a href="listcctv"><button type="button">Example</button></a></td>
+              </tr>
+              <tr>
+                <td class="tm-text-left">Check Ip</td>
+                <td>/checkip?</td>
+                <td>IP Address</td>
+                <td><a href="checkip?ip=139.180.198.59"><button type="button">Example</button></a></td>
+              </tr>
+              <tr>
+                <td class="tm-text-left">Arti Nama</td>
+                <td>/artinama?</td>
+                <td>nama</td>
+                <td><a href="artinama?nama=John+Wick"><button type="button">Example</button></a></td>
+              </tr>
+              <tr>
+                <td class="tm-text-left">Sifat Nama</td>
+                <td>/sifatnama?</td>
+                <td>nama</td>
+                <td><a href="sifatnama?nama=Ariel+Tatum"><button type="button">Example</button></a></td>
+              </tr>
+              <tr>
+                <td class="tm-text-left">Cek Cuaca</td>
+                <td>/weather?</td>
+                <td>kota</td>
+                <td><a href="weather?kota=jakarta"><button type="button">Example</button></a></td>
+              </tr>
+              <tr>
+                <td class="tm-text-left">Info Corona</td>
+                <td>/corona</td>
+                <td>-</td>
+                <td><a href="corona"><button type="button">Example</button></a></td>
+              </tr>
+              <tr>
+                <td class="tm-text-left">Url Shortener</td>
+                <td>/shortener?</td>
+                <td>url</td>
+                <td><a href="shortener?url=http://axaaxyz.herokuapp.com"><button type="button">Example</button></a></td>
+              </tr>
+              <tr>
+                <td class="tm-text-left">Surah Quran</td>
+                <td>/surahquran</td>
+                <td>surah</td>
+                <td><a href="surahquran?surah=1"><button type="button">Example</button></a></td>
+              </tr>
+              <tr>
+                <td class="tm-text-left">Jadwal Sholat</td>
+                <td>/jadwalsholat?</td>
+                <td>daerah</td>
+                <td><a href="jadwalsholat?daerah=jakarta"><button type="button">Example</button></a></td>
+              </tr>
+              <tr>
+                <td class="tm-text-left">Random Ayat</td>
+                <td>/randomayat</td>
+                <td>-</td>
+                <td><a href="randomayat"><button type="button">Example</button></a></td>
+              </tr>
+              <tr>
+                <td class="tm-text-left">Asmaul Husna</td>
+                <td>/asmaulhusna</td>
+                <td>-</td>
+                <td><a href="asmaulhusna"><button type="button">Example</button></a></td>
+              </tr>
+              <tr>
+                <td class="tm-text-left">Check Resi JNT</td>
+                <td>/jnt?</td>
+                <td>resi</td>
+                <td><a href="jnt?resi=JP2209756283"><button type="button">Example</button></a></td>
+              </tr>
+              <tr>
+                <td class="tm-text-left">Check Resi JNE</td>
+                <td>/jne?</td>
+                <td>resi</td>
+                <td><a href="jne?resi=012310127849220"><button type="button">Example</button></a></td>
+              </tr>
+              <tr>
+                <td class="tm-text-left">Instagram Post</td>
+                <td>/instagram/post?</td>
+                <td>url</td>
+                <td><a href="instagram/post?url=https://www.instagram.com/p/CAStAQoHx9c/?igshid=15piktq841xzt"><button type="button">Example</button></a></td>
+              </tr>
+              <tr>
+                <td class="tm-text-left">Instagram User</td>
+                <td>/instagram/user?</td>
+                <td>username</td>
+                <td><a href="instagram?username=axaaxyz_01"><button type="button">Example</button></a></td>
+              </tr>
+              <tr>
+                <td class="tm-text-left">Youtube Search</td>
+                <td>/ytsearch?</td>
+                <td>search</td>
+                <td><a href="ytsearch?search=maroon+5"><button type="button">Example</button></a></td>
+              </tr>
+              <tr>
+                <td class="tm-text-left">Tiktok Download</td>
+                <td>/tiktok?</td>
+                <td>url</td>
+                <td><a href="tiktok?url=https://www.tiktok.com/@reemarmartin/video/6819860803047525633"><button type="button">Example</button></a></td>
+              </tr>
+              <tr>
+                <td class="tm-text-left">Ramalan Pasangan</td>
+                <td>/pasangan?</td>
+                <td>nama1&amp;nama2</td>
+                <td><a href="pasangan?nama1=John+Wick&amp;nama2=Angelina+Jolie"><button type="button">Example</button></a></td>
+              </tr>
+              <tr>
+                <td class="tm-text-left">Pengagum Rahasia</td>
+                <td>/pengagumrahasia?</td>
+                <td>nama</td>
+                <td><a href="pengagumrahasia?nama=Ucup+Sekawan"><button type="button">Example</button></a></td>
+              </tr>
+              <tr>
+                <td class="tm-text-left">Jadwal Bioskop Kota</td>
+                <td>/jadwalbioskopkota?</td>
+                <td>kota</td>
+                <td><a href="jadwalbioskopkota?kota=jakarta"><button type="button">Example</button></a></td>
+              </tr>
+              <tr>
+                <td class="tm-text-left">Jadwal Bioskop Page</td>
+                <td>/jadwalbioskoppage?</td>
+                <td>kota</td>
+                <td><a href="jadwalbioskoppage?kota=tanggerang"><button type="button">Example</button></a></td>
+              </tr>
+            </tbody></table>
+          </div>
+        </section>
+
+        <!-- Talk to us -->
+        <hr>
+        <section class="tm-section tm-section-small">
+          <h2 class="tm-section-header">Talk to us</h2>
+          <p class="tm-mb-0">
+            Reach us via
+            <u><a href="http://line.me/ti/p/~aksaarsyad0303" class="tm-contact-link">LINE <i class="fab fa-line" aria-hidden="true"></i></a></u>
+            or follow us on social icons below. Thank you.
+          </p>
+          <div class="tm-social-icons">
+            <div class="tm-social-link-container">
+              <a href="https://instagram.com/axaaxyz_01" class="tm-social-link">
+                <i class="fab fa-instagram" aria-hidden="true"></i>
+              </a>
+            </div>
+            <div class="tm-social-link-container">
+              <a href="http://line.me/ti/p/~aksaarsyad0303" class="tm-social-link">
+                <i class="fab fa-line" aria-hidden="true"></i>
+              </a>
+            </div>
+            <div class="tm-social-link-container">
+              <a href="https://facebook.com/aksaarsyad03" class="tm-social-link">
+                <i class="fab fa-facebook" aria-hidden="true"></i>
+              </a>
+            </div>
+            <div class="tm-social-link-container">
+              <a href="https://twitter.com/axaxyz_01" class="tm-social-link">
+                <i class="fab fa-twitter" aria-hidden="true"></i>
+              </a>
+            </div>
+            </div>
+          </section></div>
+        
+      </div>
+      <footer>
+        <p class="tm-text-white tm-footer-text">
+          Copyright © 2020 Axa Xyz 
+          . Design:
+          <a href="#" class="tm-footer-link"><b><u>Axa Xyz</u></b></a>
+      </p></footer>
+    
+    <script type="text/JavaScript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  
+</body></html>
